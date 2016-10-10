@@ -1,16 +1,46 @@
 # Unix
-alias ll="ls -al"
+alias ll="ls -alh"
 alias ln="ln -v"
+alias ls="ls -w"
 alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias v="$VISUAL"
+alias u="cd .."
+alias dc="docker-compose"
+alias dm="docker-machine"
+alias dns='dscacheutil -flushcache'
+alias grep='grep --color=auto'
+alias yunti='ruby ~/vpncloud_simple_ping.rb'
+
+#git
+alias gp='git pull --rebase'
+alias gc='git commit'
+alias ga='git add .'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gs='git st'
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset %C(bold blue)(%ci) -%C(yellow)%d%Crese     t %s %C(bold blue)<%an>%Creset'"
 
 # Bundler
 alias b="bundle"
+alias be='bundle exec'
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias s="rspec"
+alias ss='rails s -b 0.0.0.0'
+
+# Current Project
+alias r='rake COVERAGE=false rubocop parallel_test'
+alias ng='ngrok -config ~/.ngrok_zl  -subdomain jp 3000'
+
+alias gdslanger='slanger --app_key goldendata --secret BQysx8sYxnfvhaC3njKg  -v'
+alias uat='ssh ubuntu@106.75.137.138'
+alias uat2='ssh ubuntu@106.75.137.138 -p32754'
+alias staging='ssh ubuntu@54.223.54.134'
+alias bastion='ssh -A ubuntu@54.222.214.121'
+alias ci='ssh ubuntu@54.223.57.1'
+alias work="cd /Users/pjiang/Project/TW/goldendata"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'

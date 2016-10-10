@@ -1,3 +1,6 @@
+[user]
+  name = JIANG Peng
+  email = pengj0520@gmail.com
 [init]
   templatedir = ~/.git_template
 [push]
@@ -12,9 +15,11 @@
   co = checkout
   pf = push --force-with-lease
   st = status
+  br = branch
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
+  commentchar = ";"
 [merge]
   ff = only
 [commit]
