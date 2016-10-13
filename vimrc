@@ -87,6 +87,7 @@ endif
 " Numbers
 set number
 set numberwidth=5
+:highlight LineNr ctermfg=darkgrey
 
 " Tab completion
 " will insert tab at beginning of line,
