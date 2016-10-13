@@ -20,8 +20,6 @@
   excludesfile = ~/.gitignore
   autocrlf = input
   commentchar = ";"
-[merge]
-  ff = only
 [commit]
   template = ~/.gitmessage
 [fetch]
