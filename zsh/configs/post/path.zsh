@@ -11,7 +11,6 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export HISTCONTROL=ignoreboth
-export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export ENABLE_TOGGLES=false
 export AUTO_TOGGLE=true
