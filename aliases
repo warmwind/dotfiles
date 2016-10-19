@@ -11,13 +11,14 @@ alias dm="docker-machine"
 alias dns='dscacheutil -flushcache'
 alias grep='grep --color=auto'
 alias yunti='ruby ~/vpncloud_simple_ping.rb'
+alias t='tmux'
 
 #git
 alias gp='git pull --rebase'
 alias gc='git commit'
 alias ga='git add .'
-alias gd='git diff'
-alias gdc='git diff --cached'
+alias gd='git dsf'
+alias gdc='git dsf --cached'
 alias gs='git st'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset %C(bold blue)(%ci) -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset'"
 
