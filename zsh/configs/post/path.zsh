@@ -1,6 +1,6 @@
 # ensure dotfiles bin directory is loaded first
 #PATH="$HOME/.bin:/usr/local/sbin:$PATH"
-PATH="$HOME/.bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:$PATH"
+PATH="$HOME/.bin:$HOME/.vimpkg/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:$PATH"
 
 # load rbenv if available
 if command -v rbenv >/dev/null; then

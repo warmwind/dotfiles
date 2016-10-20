@@ -1,6 +1,12 @@
 " Leader
 let mapleader = " "
 
+" config airline
+let g:airline_theme='molokai'
+let g:airline_powerline_fonts = 1
+
+set t_Co=256
+
 set backspace=2   " Backspace deletes like most programs in insert mode
 set nobackup
 set nowritebackup
@@ -13,11 +19,13 @@ set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 se mouse+=a
 
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
+
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
@@ -28,6 +36,10 @@ if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
   runtime! macros/matchit.vim
 endif
 
+"Show hidden files in NerdTree
+let NERDTreeShowHidden=1
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 filetype plugin indent on
 
 augroup vimrcEx
@@ -151,6 +163,18 @@ set complete+=kspell
 
 " Always use vertical diffs
 set diffopt+=vertical
+
+" Shortcut to open nerdtree
+map <C-n> :NERDTreeToggle<CR>
+
+" Highlight search
+:set hlsearch
+
+" C-o C-i to navigate recent files
+" * to highlight current word
+" C- hijk to navigate panes
+" in nerdtree s to open in new split pane
+
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
