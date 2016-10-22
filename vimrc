@@ -1,11 +1,15 @@
 " Leader
 let mapleader = " "
 
-" config airline
+"-------------------- config airline
 let g:airline_theme='molokai'
 let g:airline_powerline_fonts = 1
-
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
 set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
 
 set backspace=2   " Backspace deletes like most programs in insert mode
 set nobackup
@@ -99,7 +103,7 @@ endif
 " Numbers
 set number
 set numberwidth=5
-:highlight LineNr ctermfg=darkgrey
+:highlight LineNr ctermfg=black
 
 " Tab completion
 " will insert tab at beginning of line,
