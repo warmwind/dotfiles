@@ -6,12 +6,8 @@ git_prompt_info() {
   fi
 }
 setopt promptsubst
-ret_status="%(?:%{$fg_bold[yellow]%}[^_^] :%{$fg_bold[red]%}[0_0] %s)"
+ret_status="%(?:%{$fg_bold[green]%}[^_^] :%{$fg_bold[red]%}[0_0] %s)"
 PROMPT='${ret_status}%{$reset_color%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info) %{$reset_color%}
 $ '
 
 RPROMPT='%{$fg_bold[red]%}%{$reset_color%}'
-
-# PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) %# '
-
-# ZSH_THEME="jp"
