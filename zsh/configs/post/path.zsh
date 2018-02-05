@@ -17,7 +17,9 @@ export AUTO_TOGGLE=true
 export HOMEBREW_GITHUB_API_TOKEN=570c415291e4a673241f94b1cbc7170428cb45ba
 export ANDROID_HOME=/Users/pjiang/Downloads/android-sdk-macosx
 
-CASE_SENSITIVE="false"
+export NVM_DIR="$HOME/.nvm"
+source "/usr/local/opt/nvm/nvm.sh"
+
 
 # mkdir .git/safe in the root of repositories you trust
 PATH=".git/safe/../../bin:$PATH"

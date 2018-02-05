@@ -29,22 +29,27 @@ alias be='bundle exec'
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias s="rspec"
-alias ss='rails s -b 0.0.0.0'
+alias ss='AUTOPREFIXER=false spring rails s -b 0.0.0.0'
+alias rc='RAILS_ENV=development spring rails c'
 
 # Current Project
-alias r='rake COVERAGE=false rubocop parallel_test'
+alias r='rake COVERAGE=false scss_lint rubocop parallel_test'
+alias sr='rake COVERAGE=false scss_lint rubocop'
 alias ng='ngrok -config ~/.ngrok_zl  -subdomain jp 3000'
 
 alias gdslanger='slanger --app_key goldendata --secret BQysx8sYxnfvhaC3njKg  -v'
 alias uat='ssh ubuntu@106.75.137.138'
 alias uat2='ssh ubuntu@106.75.137.138 -p32754'
-alias staging='ssh ubuntu@54.223.54.134'
-alias bastion='ssh -A ubuntu@54.222.214.121'
-alias ci='ssh ubuntu@54.223.57.1'
+alias staging='ssh gordon@52.83.210.176'
+alias bastion='ssh -A ubuntu@52.80.157.199'
+alias enbastion='ssh -A ec2-user@54.222.206.110'
+alias ci='ssh ubuntu@jenkins.jinshuju.net'
 alias w="cd /Users/pjiang/Project/TW/goldendata"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
+
+alias ctags_rails='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local

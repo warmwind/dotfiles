@@ -1,6 +1,6 @@
 [user]
-  name = JIANG Peng
-  email = pengj0520@gmail.com
+	name = Oscar Jiang
+	email = pengj0520@gmail.com
 [init]
   templatedir = ~/.git_template
 [push]

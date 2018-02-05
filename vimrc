@@ -179,6 +179,7 @@ map <C-n> :NERDTreeToggle<CR>
 " C- hijk to navigate panes
 " in nerdtree s to open in new split pane
 
+set tags=$HOME/.vimtags
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
