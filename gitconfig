@@ -6,7 +6,7 @@
 [push]
   default = current
 [color]
-  ui = auto
+	ui = true
 [alias]
   aa = add --all
   ap = add --patch
@@ -21,6 +21,7 @@
   excludesfile = ~/.gitignore_global
   autocrlf = input
   commentchar = ";"
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [commit]
   template = ~/.gitmessage
 [fetch]
@@ -29,3 +30,15 @@
   autosquash = true
 [include]
   path = ~/.gitconfig.local
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse

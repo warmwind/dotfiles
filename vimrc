@@ -166,7 +166,7 @@ set spellfile=$HOME/.vim-spell-en.utf-8.add
 set complete+=kspell
 
 " Always use vertical diffs
-set diffopt+=vertical
+" set diffopt+=vertical
 
 " Shortcut to open nerdtree
 map <C-n> :NERDTreeToggle<CR>

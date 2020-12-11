@@ -12,6 +12,7 @@ alias dns='dscacheutil -flushcache'
 alias grep='grep --color=auto'
 alias yunti='ruby ~/vpncloud_simple_ping.rb'
 alias t='tmux'
+alias bt='sudo defaults write bluetoothaudiod "Enable AAC codec" -bool true'
 
 #git
 alias gp='git pull --rebase'
@@ -26,9 +27,12 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset %C(bold blue)(%ci) -%C
 alias b="bundle"
 alias be='bundle exec'
 
+alias gr="gradle"
+alias grt="gradle test jacocoTestCoverageVerification"
+alias grr="gradle bootRun"
+
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
-alias s="rspec"
 alias ss='AUTOPREFIXER=false rails s -b 0.0.0.0'
 alias rc='RAILS_ENV=development rails c'
 
@@ -39,13 +43,28 @@ alias ng='ngrok -config ~/.ngrok_zl  -subdomain jp 3000'
 
 alias gdslanger='slanger --app_key goldendata --secret BQysx8sYxnfvhaC3njKg  -v'
 alias enuat='ssh gordon@52.83.92.6'
-alias uat='ssh gordon@52.83.222.179'
-alias uat2='ssh gordon@52.83.222.179 -p32754'
-alias staging='ssh gordon@52.83.210.176'
-alias bastion='ssh -A ubuntu@52.80.157.199'
-alias enbastion='ssh -A ec2-user@54.222.206.110'
+alias usd='ssh gordon@ssh.usd.jinshuju.net'
+alias xm='ssh ec2-user@ssh.usd.jinshuju.net'
+alias uat='ssh gordon@52.83.238.41'
+alias uat2='ssh gordon@52.83.238.41 -p32754'
+
+alias staging='ssh gordon@staging.jinshuju.net'
+alias bastion='ssh -A ubuntu@52.83.56.40'
+alias enbastion='ssh -A ec2-user@52.82.103.168'
+alias smith='ssh -A ec2-user@52.83.138.103'
 alias ci='ssh ubuntu@jenkins.jinshuju.net'
-alias w="cd /Users/pjiang/Project/TW/goldendata"
+alias w="cd /Users/oscar/Projects/jinshuju/goldendata"
+alias jj="ssh -A root@140.143.153.163"
+alias jjj="ssh -A jj-ss"
+alias jjd="ssh -L 2001:172.21.0.10:27017 root@140.143.153.163"
+alias jjuat="ssh -A root@58.87.90.15"
+alias dep="ssh -A ec2-user@52.82.78.211"
+alias bj="ssh -A bastion-ss"
+alias x="cd ~/Projects/jinshuju/xm/knowhowxm"
+alias xe="cd ~/Projects/jinshuju/xm/knowhowxm-fe"
+
+alias yt="ssh -A ec2-user@68.79.28.245"
+
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
