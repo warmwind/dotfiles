@@ -28,8 +28,8 @@ alias b="bundle"
 alias be='bundle exec'
 
 alias gr="gradle"
-alias grt="gradle test jacocoTestCoverageVerification"
-alias grr="gradle bootRun"
+alias grt="./gradlew prepush"
+alias grr="./gradlew bootRun"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
@@ -62,8 +62,9 @@ alias dep="ssh -A ec2-user@52.82.78.211"
 alias bj="ssh -A bastion-ss"
 alias x="cd ~/Projects/jinshuju/xm/knowhowxm"
 alias xe="cd ~/Projects/jinshuju/xm/knowhowxm-fe"
-
-alias yt="ssh -A ec2-user@68.79.28.245"
+alias yfd="ssh -A ubuntu@39.102.54.246"
+alias yt="ssh -A ec2-user@161.189.6.159"
+alias cxuat="ssh ec2-user@52.83.163.203"
 
 
 # Pretty print the path
