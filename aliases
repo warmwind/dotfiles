@@ -65,6 +65,9 @@ alias xe="cd ~/Projects/jinshuju/xm/knowhowxm-fe"
 alias yfd="ssh -A ubuntu@39.102.54.246"
 alias yt="ssh -A ec2-user@161.189.6.159"
 alias cxuat="ssh ec2-user@52.83.163.203"
+alias hiphi="ssh OscarJiang@122.112.255.230 -p 5855"
+alias bmw="ssh -A -p 60022 uf200862@10.85.25.106"
+
 
 
 # Pretty print the path
