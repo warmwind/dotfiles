@@ -45,8 +45,14 @@ _load_settings "$HOME/.zsh/configs"
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init --path)"
+fi
+
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
